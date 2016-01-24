@@ -2,6 +2,8 @@ FROM node:4.2.4
 
 MAINTAINER Jeremystuartmarshall
 
+LABEL "generator-angular-fullstack-version"="2.0.8"
+
 RUN npm cache clean -f
 RUN npm install -g npm
 RUN npm install -g yo
