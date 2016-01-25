@@ -2,6 +2,8 @@ FROM node:4.2.4
 
 MAINTAINER Jeremystuartmarshall
 
+LABEL "version"="3.3.0-beta.0"
+
 RUN npm cache clean -f
 RUN npm install -g npm
 RUN npm install -g yo
