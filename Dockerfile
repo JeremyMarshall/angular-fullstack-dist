@@ -2,11 +2,9 @@ FROM node:4.2.4
 
 MAINTAINER Jeremystuartmarshall
 
-LABEL "version"="3.3.0-beta.0"
+LABEL "version"="3.7.4"
 
-RUN npm cache clean -f
-RUN npm install -g npm
-RUN npm install -g yo
+RUN npm cache clean -f && npm install -g npm yo
 
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
