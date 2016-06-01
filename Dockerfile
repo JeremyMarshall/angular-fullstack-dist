@@ -1,10 +1,10 @@
 FROM node:4.2.4
 
-MAINTAINER Jeremystuartmarshall
+MAINTAINER Jeremymarshall
 
 LABEL "version"="3.7.4"
 
-RUN npm cache clean -f && npm install -g npm yo
+RUN npm cache clean -f & npm install -g npm yo
 
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
